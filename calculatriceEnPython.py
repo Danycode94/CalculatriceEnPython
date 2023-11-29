@@ -14,7 +14,7 @@ if nombre_iterations:
         nombre_iterations = int(input("La quantite de notes doit etre positif: ").strip())
         
     for item in range(int(nombre_iterations)):
-        note = int(input("Saisir la note #" + str(item + 1) +" : ").strip())
+        note = int(input(f"Saisir la note #{(item + 1)} : ").strip())
         my_list.append(note)
         
     """ Calcul de la moyenne des notes dans la liste. """
@@ -23,7 +23,7 @@ if nombre_iterations:
         somme += item
         
     moyenne = somme/len(my_list)
-    print("\nVotre moyenne est de: "+str(moyenne))
+    print(f"\nVotre moyenne est de: {moyenne}")
     
     """ Verifier les mentions pour la moyenne. """
     if moyenne >= 90:
